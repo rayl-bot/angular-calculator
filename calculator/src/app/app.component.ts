@@ -166,20 +166,4 @@ export class AppComponent {
       this.num1+=9;
     }
   }
-
-  suma(){
-
-  }
-
-  resta(){
-
-  }
-
-  multiplicacion(){
-
-  }
-
-  division(){
-
-  }
 }
