@@ -1,0 +1,56 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<div class="container my-4">
+  <div class="calculator card">
+
+      <input type="text" class="calculator-screen z-depth-1" value="{{num1}}{{operation}}{{num2}}" disabled />
+      <input type="text" class="calculator-screen z-depth-1" value="{{result}}" disabled />
+
+      <div class="calculator-keys">
+
+        <button type="button" class="operator btn btn-info" value="+" (click)="setOperatorSuma()">+</button>
+        <button type="button" class="operator btn btn-info" value="-" (click)="setOperatorResta()">-</button>
+        <button type="button" class="operator btn btn-info" value="*" (click)="setOperatorMulti()">&times;</button>
+        <button type="button" class="operator btn btn-info" value="/" (click)="setOperatorDivi()">&divide;</button>
+
+        <button type="button" value="7" class="btn btn-light waves-effect" (click)="add7()">7</button>
+        <button type="button" value="8" class="btn btn-light waves-effect" (click)="add8()">8</button>
+        <button type="button" value="9" class="btn btn-light waves-effect" (click)="add9()">9</button>
+
+
+        <button type="button" value="4" class="btn btn-light waves-effect" (click)="add4()">4</button>
+        <button type="button" value="5" class="btn btn-light waves-effect" (click)="add5()">5</button>
+        <button type="button" value="6" class="btn btn-light waves-effect" (click)="add6()">6</button>
+
+
+        <button type="button" value="1" class="btn btn-light waves-effect" (click)="add1()">1</button>
+        <button type="button" value="2" class="btn btn-light waves-effect" (click)="add2()">2</button>
+        <button type="button" value="3" class="btn btn-light waves-effect" (click)="add3()">3</button>
+
+
+        <button type="button" value="0" class="btn btn-light waves-effect" (click)="add0()">0</button>
+        <button type="button" class="decimal function btn btn-secondary" (click)="addPoint()" value=".">.</button>
+        <button type="button" class="all-clear function btn btn-danger btn-sm" (click)="clear()" value="all-clear">AC</button>
+
+        <button type="button" class="equal-sign operator btn btn-info" (click)="resolv()" value="=">=</button>
+
+      </div>
+    </div>
+  </div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
